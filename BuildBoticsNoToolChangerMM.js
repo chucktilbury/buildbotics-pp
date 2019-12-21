@@ -15,7 +15,10 @@ function BuildBoticsNoToolChangerMM(cadDocumentInterface, camDocumentInterface) 
     this.lineNumber = 1000;
     this.lineNumberIncrement = 10;
     
-
+    this.toolHeader = [
+        "[N] M03 [S]" // Start the spindle
+    ];
+    
     this.header = [
 		"(Program name: [PROGRAM_NAME])",
 		"(Metric measure)",
